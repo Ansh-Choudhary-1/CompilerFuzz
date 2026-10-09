@@ -1,0 +1,28 @@
+# ── CompilerFuzz .gitignore ───────────────────────────────────────────────────
+
+# Failure artefacts (generated at runtime — never commit these)
+failures/
+
+# Temporary build directory created by fuzz.py during a run
+_compilerfuzz_tmp/
+
+# Python bytecode cache
+__pycache__/
+*.pyc
+*.pyo
+
+# pytest cache
+.pytest_cache/
+
+# Virtual environments (if anyone creates one inside the repo)
+venv/
+.venv/
+env/
+
+# Compiled C binaries that might end up in the project root during manual testing
+*.out
+a.out
+
+# OS junk
+.DS_Store
+Thumbs.db
